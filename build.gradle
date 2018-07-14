@@ -20,8 +20,8 @@ version = '0.0.1-SNAPSHOT'
 processResources.destinationDir = compileJava.destinationDir
 compileJava.dependsOn processResources
 
-war {
-    baseName = 'spring-boot-example'
+jar {
+    baseName = 'springboot-gradle-sample'
     version =  version
 }
 
