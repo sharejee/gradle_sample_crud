@@ -14,17 +14,17 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
+apply plugin: 'war'
 
 version = '0.0.1-SNAPSHOT'
 
 processResources.destinationDir = compileJava.destinationDir
 compileJava.dependsOn processResources
 
-jar {
+war {
     baseName = 'springboot-gradle-sample'
     version =  version
 }
-
 repositories {
     mavenCentral()
     mavenLocal()
