@@ -2,8 +2,6 @@ var app = angular.module("EmployeeManagement", []);
 
 // Controller Part
 app.controller("EmployeeController", function($scope, $http) {
-
-
     $scope.employees = [];
     $scope.employeeForm = {
         empId: 1,
